@@ -22,6 +22,11 @@ const Register = () => {
     const [rut, setRut] = useState("");
     const [titleU, setTitleU] = React.useState("");
     const [homeA, setHomeA] = React.useState("");
+
+    const handleFotoUser = (e) => {
+        console.log(e)
+    }
+
     const handleOnChange = (e, prop) => {
         console.log(e.target.value)
         if(prop === "name"){
@@ -100,7 +105,10 @@ const Register = () => {
                     Perfil Veterinario
                 </Title>
                 <hr style={{width:"90%",backgroundColor:"#e1e1e1",height:"2px",border:"none"}}/>
-                <FormPrincipal handleOnChange={handleOnChange} />
+                <FormPrincipal 
+                    handleOnChange={handleOnChange} 
+                    handleFotoUser={handleFotoUser} 
+                    />
                 <hr style={{width:"90%",backgroundColor:"#e1e1e1",height:"2px",border:"none"}}/>
                 <Container 
                     display="grid"

@@ -262,7 +262,7 @@ const FormSecondary = (props) => {
                 <InputText
                     type="file"
                     id="document1"
-                    accept="application/pdf"
+                    accept="application/pdf/png/jpg/svg/jpeg"
                     onChange={e => props.handleTitleUniversitary(e.target)}
                     style={{ display: "none" }}
                 />
@@ -309,7 +309,7 @@ const FormSecondary = (props) => {
                 <InputText
                     type="file"
                     id="document2"
-                    accept="application/pdf"
+                    accept="application/pdf/png/jpg/svg/jpeg"
                     onChange={e => props.handleHomeActivities(e.target)}
                     style={{ display: "none" }}
                 />

@@ -13,7 +13,7 @@ const FormPrincipal = (props) => {
         padding="7px 0px"
         widthTele="350px"
         >
-        <ChangePhoto />
+        <ChangePhoto onChange={(e) => props.handleFotoUser(e)}/>
         <Container 
             display="grid"
             gridColumns="30% 70%"
